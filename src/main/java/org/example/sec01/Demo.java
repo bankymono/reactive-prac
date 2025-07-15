@@ -1,4 +1,4 @@
-package org.example;
+package org.example.sec01;
 
 import org.example.sec01.publisher.PublisherImpl;
 import org.example.sec01.subscriber.SubscriberImpl;
