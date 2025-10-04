@@ -27,7 +27,10 @@ public class Lec05BackPressureStrategies {
         producer
 //                .onBackpressureBuffer()
 //                .onBackpressureError()
-                .onBackpressureBuffer(10)
+//                .onBackpressureBuffer(10)
+//                .onBackpressureDrop()
+                .onBackpressureLatest()
+                .log()
                 .limitRate(1)
                 .publishOn(Schedulers.boundedElastic())
                 .map(i -> timeConsumingTask(i))
